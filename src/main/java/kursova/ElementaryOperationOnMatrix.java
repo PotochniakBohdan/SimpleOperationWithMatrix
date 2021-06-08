@@ -1,11 +1,10 @@
-package kursova2;
-
+package kursova;
 
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.*;
 
-public class Matrix implements ActionListener {
+public class ElementaryOperationOnMatrix implements ActionListener {
     private static int columns, rows;
     private static double myMatrix[][];
     private static double tempMatrix[][];
@@ -17,7 +16,7 @@ public class Matrix implements ActionListener {
     private static int lastCol, lastRow;
 
 
-    Matrix() {
+    ElementaryOperationOnMatrix() {
         columns = rows = 0;
         myMatrix = new double[0][0];
         ChooseOperation();
@@ -371,7 +370,7 @@ public class Matrix implements ActionListener {
     }
 
     public static void main(String[] args) {
-        Matrix m1 = new Matrix();
+        ElementaryOperationOnMatrix m1 = new ElementaryOperationOnMatrix();
     }
 }
 
